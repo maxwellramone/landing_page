@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+body {
+    position: relative;
+    font-family: 'Roboto', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.logo {
+    color: #f9faf8;
+    size: 24px;
+    font-weight: 900;
+}
+
+.header-links {
+    display: flex;
+    gap: 16px
+}
+
+a, .secondary-text{
+    color: #e5e7eb;
+    size: 18px;
+}
+
+.secondary-text {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hero {
+    display: flex;
+    max-width: 100%;
+    
+}
+
+.right {
+    
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: hsl(0, 0%, 50%);
+    width: 530.5px;
+    height: 171.5px;
+}
+
+.left {
+    flex-direction: column;
+}
+
+
+.right img {
+    max-width: 100%;
+    max-height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.left .main-text {
+    font-size: 48px;
+    color: white;
+}
+
+.left button {
+    background-color: #3882f6;
+    border-radius: 10px;
+    border-color: transparent;
+    color: white;
+    align-self: flex-start;
+    width: 30%;
+    height: 30px;
+}
+
+.left, .right {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    padding: 0;
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+.box-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.info-1, .info-2, .info-3, .info-4 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image {
+    border-radius: 10px;
+    border-color: #3882f6;
+}
+
+/* Original */
+
+/* .top {
+    background-color: #1f2937;
+    margin: 0;
+    border-width: 0;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    padding: 0 0 50px 0;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Remove absolute positioning */
+    /* position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 200px; /* Adjust margin-top as needed
+}*/
+
+
+/* GPT */
+
+.top {
+    background-color: #1f2937;
+    margin: 0;
+    border-width: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 0 50px 0;
+    /* Added relative positioning */
+    /* position: relative; */
+    position: absolute;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Removed absolute positioning */
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    /* Adjusted padding-top to position it below the first container */
+    padding-top: 0px; /* Adjust as needed */
+    position: relative;
+}
