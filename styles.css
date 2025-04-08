@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    gap: 20px;
 }
 
 .header {
@@ -102,8 +103,6 @@ ul {
 
 
 
-
-
 .box-container {
     display: flex;
     flex: 1;
@@ -117,37 +116,15 @@ ul {
     align-items: center;
     justify-content: center;
     margin: 20px;
+    gap: 10px;
 }
 
 .image {
     border-radius: 10px;
-    border-color: #3882f6;
+    border: 2px solid #3882f6;
+    width: 100px;
+    height: 100px;
 }
-
-/* Original */
-
-/* .top {
-    background-color: #1f2937;
-    margin: 0;
-    border-width: 0;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    padding: 0 0 50px 0;
-}
-
-.information-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Remove absolute positioning */
-    /* position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 200px; /* Adjust margin-top as needed
-}*/
 
 
 /* GPT */
@@ -156,13 +133,13 @@ ul {
     background-color: #1f2937;
     margin: 0;
     border-width: 0;
-    left: 0;
+    /* left: 0;
     right: 0;
-    top: 0;
+    top: 0; */
     padding: 0 0 50px 0;
     /* Added relative positioning */
     /* position: relative; */
-    position: absolute;
+    /* position: absolute; */
 }
 
 .information-container {
@@ -170,11 +147,63 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Removed absolute positioning */
-    /* position: absolute;
-    left: 0;
-    top: 0; */
-    /* Adjusted padding-top to position it below the first container */
-    padding-top: 0px; /* Adjust as needed */
-    position: relative;
+    padding: 5vh 6vh;
+    gap: 30px;
 }
+
+.information-container .header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.box-container .text {
+    text-align: center;
+}
+
+.quote-section {
+    background-color: hsl(0, 0%, 75%);
+    padding: 5vh 20vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 36px;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: 700;
+}
+
+.quote {
+    font-weight: 100;
+    font-style: italic;
+}
+
+.call-to-action-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 6vh;
+    gap: 30px;
+}
+
+.call-to-action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #3882f6;
+    border-radius: 2px;
+    width: 50vh;
+    height: 10vh;
+
+}
+
+.left-container {
+    width: 20vh;
+}
+
+
+
+
